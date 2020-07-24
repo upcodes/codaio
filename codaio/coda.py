@@ -421,6 +421,7 @@ class Coda:
         table_id_or_name: str,
         query: str = None,
         use_column_names: bool = False,
+        value_format: Optional[str] = None,
         limit: int = None,
         offset: int = None,
     ) -> Dict:
@@ -447,6 +448,8 @@ class Coda:
         data = {"useColumnNames": use_column_names}
         if query:
             data["query"] = query
+        if value_format:
+            data["valueFormat"] = value_format
 
         return self.get(
             f"/docs/{doc_id}/tables/{table_id_or_name}/rows",
