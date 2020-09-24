@@ -5,7 +5,7 @@
 
 `codaio` documentation
 ==================================
-Python wrapper for `coda.io <https://coda.io/developers/apis/v1beta1>`_ API
+Python wrapper for `coda.io <https://coda.io/developers/apis/v1>`_ API
 
 Project home: https://github.com/blasterai/codaio
 

@@ -1,6 +1,6 @@
 ## Python wrapper for [Coda.io](https://coda.io) API
 
-[![CodaAPI](https://img.shields.io/badge/Coda_API_version-0.1.1--beta1-orange)](https://coda.io/developers/apis/v1beta1)
+[![CodaAPI](https://img.shields.io/badge/Coda_API_version-0.1.1--beta1-orange)](https://coda.io/developers/apis/v1)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/codaio)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Documentation Status](https://readthedocs.org/projects/codaio/badge/?version=latest)](https://codaio.readthedocs.io/en/latest/?badge=latest)
@@ -19,7 +19,7 @@ pip install codaio
 ### Config via environment variables
 The following variables will be called from environment where applicable:
 
-* `CODA_API_ENDPOINT` (default value `https://coda.io/apis/v1beta1`)
+* `CODA_API_ENDPOINT` (default value `https://coda.io/apis/v1`)
 * `CODA_API_KEY` - your API key to use when initializing document from environment
 
 ### Quickstart using raw API
@@ -32,7 +32,7 @@ from codaio import Coda
 coda = Coda('YOUR_API_KEY')
 
 >>> coda.create_doc('My document')
-{'id': 'NEW_DOC_ID', 'type': 'doc', 'href': 'https://coda.io/apis/v1beta1/docs/LINK', 'browserLink': 'https://coda.io/d/LINK', 'name': 'My Document', 'owner': 'your@email', 'createdAt': '2019-08-29T11:36:45.120Z', 'updatedAt': '2019-08-29T11:36:45.272Z'}
+{'id': 'NEW_DOC_ID', 'type': 'doc', 'href': 'https://coda.io/apis/v1/docs/LINK', 'browserLink': 'https://coda.io/d/LINK', 'name': 'My Document', 'owner': 'your@email', 'createdAt': '2019-08-29T11:36:45.120Z', 'updatedAt': '2019-08-29T11:36:45.272Z'}
 ```
 For full API reference for Coda class see [documentation](https://codaio.readthedocs.io/en/latest/index.html#codaio.Coda)
 
